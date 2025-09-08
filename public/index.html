@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books API Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Books Management</h1>
+
+    <section>
+      <h2>Add a New Book</h2>
+      <form id="addBookForm">
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>All Books</h2>
+      <button id="loadBooks">Load All Books</button>
+      <ul id="booksList"></ul>
+    </section>
+
+    <section>
+      <h2>Get Book by ID</h2>
+      <input type="number" id="getId" placeholder="Book ID" required />
+      <button id="getBook">Get Book</button>
+      <div id="bookDetails"></div>
+    </section>
+
+    <section>
+      <h2>Delete Book by ID</h2>
+      <input type="number" id="deleteId" placeholder="Book ID" required />
+      <button id="deleteBook">Delete Book</button>
+      <div id="deleteMessage"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
